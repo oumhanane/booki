@@ -636,22 +636,16 @@ p {
     }
 
     .activites-marseille {
-        margin: 0;
+        margin-top: 25px;
     }
 
     .activites-cards {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
 
     .activites-cards .card-activites {
-        flex-direction: column;
-        justify-content: space-between;
         width: 100%;
         background-color: white;
         border-radius: 20px;
