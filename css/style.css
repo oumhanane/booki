@@ -232,7 +232,7 @@ p {
     align-items: center;
     justify-content: flex-start;
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .filtres-container i {
@@ -566,40 +566,68 @@ p {
         cursor: pointer;
     }
 
-    /* 
     .filtres-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 30px;
-        margin-top: 60px;
-    } */
-
-    /* .filtres, .bordures-filtre:nth-child(1), .bordures-filtre:nth-child(2) {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
-    .bordures-filtre:nth-child(3), .bordures-filtre:nth-child(4) {
-        display: flex;
-        justify-content: center;
-    } */
+    .filtres-container h3 {
+        margin-top: -10px;
+    }
+
+    .filtres-container p {
+        margin: 15px 0;
+    }
+
+    .filtres-container i {
+        font-size: 1.8em;
+        
+    }
+
+    .bordures-filtre {
+        width: 80%;
+    }
+
+    .bordures-filtre:nth-child(1) {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .bordures-filtre:nth-child(2) {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-top: -30px;
+    }
+
+    .bordures-filtre:nth-child(3) {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        margin-top: -30px;
+    }
+
+    .bordures-filtre:nth-child(4) {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        margin-top: -10px;
+    }
+
+    .bordures-filtre:nth-child(5) {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        margin-top: -10px;
+    }
 
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
-        /* margin-top: 300px; */
         justify-content: space-around;
-        /* align-items: space-around; */
         width: 100%;
         margin: 0;
-        /* height: 1500px; */
     }
 
     .hebergements-and-populaires .populaires {
         border-radius: 0;
-        /* margin: 0;
-        padding: 0; */
     }
 
     .populaires-cards {
@@ -656,5 +684,18 @@ p {
     .card-activites img {
         width: 100%;
         object-fit: cover;
+    }
+
+    .footer-container {
+        margin-top: 100px;
+        display: block;
+    }
+
+    .article-footer:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .article-footer:nth-child(3) {
+        margin-top: 20px;
     }
 }
