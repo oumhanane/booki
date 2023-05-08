@@ -18,15 +18,15 @@
         <div class="main-container">
         <header class="entete">
             <img class="logo" src="images/logo/Booki.png" alt="logo booki" />
-            <nav class="nav-entete">
-                    <ul class="menu">
-                        <li class="hebergements-activites">
-                            <a class="lien" href="#hebergements">Hébergements</a>
-                        </li>
-                        <li class="hebergements-activites">
-                            <a class="lien" href="#activites">Activités</a>
-                        </li>
-                    </ul>
+            <nav class="nav-header">
+                <ul class="menu">
+                    <li class="hebergements-activites">
+                        <a class="lien" href="#hebergements">Hébergements</a>
+                    </li>
+                    <li class="hebergements-activites">
+                        <a class="lien" href="#activites">Activités</a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
@@ -47,7 +47,9 @@
                     placeholder="Marseille, France"
                 />
                 <input class="input-submit" type="submit" value="Rechercher" />
-                <i id="icone-loupe" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <label class="icone-recherche" for="ville">
+                    <i id="icone-loupe" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </label>
             </form>
 
             <div class="filtres-container">
@@ -70,8 +72,10 @@
                 </button>
             </div>
             <div class="infos">
-                <div class="icone-infos"><i class="fa fa-info-circle"></i> </div>      
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <!-- <div class="icone-infos"> -->
+                    <i class="fa fa-info-circle"></i> 
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>      
+                <!-- </div> -->
             </div>
         </section>
         <div class="hebergements-and-populaires">
