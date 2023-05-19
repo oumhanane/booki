@@ -306,21 +306,29 @@ input::-webkit-input-placeholder {
 }
 
 .hebergements-cards {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 90%;
 }
 
-.hebergements-photo {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin-top: 33px;
-    margin-bottom: 30px;
-    width: 100%;
+.hebergements-cards .card-hebergements {
+    width: 31%;
+    padding: 0;
 }
 
-.hebergements-photo a {
-    width: 31%;
+.hebergements-cards .card-hebergements:nth-child(4) {
+    margin-top: 30px;
+}
+
+.hebergements-cards .card-hebergements:nth-child(5) {
+    margin-top: 30px;
+}
+
+.hebergements-cards .card-hebergements:nth-child(6) {
+    margin-top: 30px;
 }
 
 .card-hebergements {
@@ -332,12 +340,13 @@ input::-webkit-input-placeholder {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.hebergements-photo img {
+.card-hebergements img {
     width: 100%;
     height: 124px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     object-fit: cover;
+    padding: 5px;
 }
 
 .hebergements-cards .card-content {
@@ -365,9 +374,10 @@ input::-webkit-input-placeholder {
     margin-bottom: 5px;
 }
 
+/* 
 .affichez {
     margin-top: 20px;
-}
+} */
 
 .affichez-plus {
     text-decoration: none;
@@ -426,7 +436,7 @@ input::-webkit-input-placeholder {
 /****** Activités Marseille ***********/
 
 .activites-marseille {
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -474,7 +484,7 @@ input::-webkit-input-placeholder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 33% 33% 33%;
-    margin-top: 30px;
+    margin-top: 80px;
     padding-left: 40px;
 }
 
@@ -499,6 +509,7 @@ input::-webkit-input-placeholder {
 @media (max-width: 1024px) {
 
     /******section recherche hebergements ***********/
+
     /* Les filtres */
 
     .bordures-filtre {
@@ -756,25 +767,56 @@ input::-webkit-input-placeholder {
         margin-top: 30px;
     }
 
-    .hebergements-photo {
+    .hebergements-cards {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0;
     }
 
-    .hebergements-photo a {
+    .hebergements-cards .card-hebergements {
         width: 95%;
         padding: 0;
     }
 
-    .hebergements-photo .card {
-        width: 90%;
+    /* .hebergements-photo a {
+        width: 95%;
+        padding: 0;
+    } */
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         height: 40%;
     }
 
     .card-hebergements {
         margin: 10px 0;
+    }
+
+    .card-hebergements:nth-child(1) {
+        order: 1;
+    }
+
+    .card-hebergements:nth-child(2) {
+        order: 6;
+    }
+
+    .card-hebergements:nth-child(3) {
+        order: 3;
+    }
+
+    .card-hebergements:nth-child(4) {
+        order: 4;
+    }
+
+    .card-hebergements:nth-child(5) {
+        order: 2;
+    }
+
+    .card-hebergements:nth-child(6) {
+        order: 5;
     }
 
     .card-hebergements img {
@@ -793,7 +835,6 @@ input::-webkit-input-placeholder {
         flex-direction: column;
         align-content: space-between;
         background-color: white;
-        margin-top: 80px;
     }
 
     .activites-cards {
@@ -821,7 +862,7 @@ input::-webkit-input-placeholder {
     }
 
     /****** Footer ***********/
-    
+
     .footer-container {
         margin-top: 60px;
         display: block;
