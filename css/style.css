@@ -718,9 +718,8 @@ input::-webkit-input-placeholder {
     }
 
     .icone-infos p:nth-child(1) {
-        border-radius: 100%;
-        width: 10%;
-        height: 20%;
+        border-radius: 80%;
+        padding: 3px 10px;
     }
 
     /****** Hebergements And Populaires ***********/
@@ -778,11 +777,6 @@ input::-webkit-input-placeholder {
         width: 95%;
         padding: 0;
     }
-
-    /* .hebergements-photo a {
-        width: 95%;
-        padding: 0;
-    } */
 
     .hebergements-cards {
         display: flex;
