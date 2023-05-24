@@ -76,11 +76,6 @@ p {
     font-size: 16px;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
 .card {
     background-color: white;
     border-radius: 20px;
@@ -263,7 +258,7 @@ input::-webkit-input-placeholder {
     font-family: roboto slab, serif;
     color: var(--main-color);
     font-weight: 900;
-} 
+}
 
 .icone-infos p:nth-child(2) {
     display: inline;
@@ -380,7 +375,6 @@ input::-webkit-input-placeholder {
     color: #000000;
     font-weight: 700;
     line-height: 21px;
-    margin-top: 30px;
 }
 
 /****** Populaires ***********/
@@ -479,7 +473,7 @@ input::-webkit-input-placeholder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 33% 33% 33%;
-    margin-top: 80px;
+    margin-top: 65px;
     padding-left: 40px;
 }
 
@@ -530,10 +524,6 @@ input::-webkit-input-placeholder {
         width: 100%;
     }
 
-    .section-title {
-        padding-left: 20px;
-    }
-
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -566,6 +556,10 @@ input::-webkit-input-placeholder {
         font-size: 13px;
     }
 
+    .affichez {
+        padding-top: 30px;
+    }
+
     /****** Activités Marseille ***********/
 
     .activites-marseille img {
@@ -582,11 +576,6 @@ input::-webkit-input-placeholder {
         width: 100%;
     }
 
-    /****** Footer ***********/
-
-    .footer-container {
-        margin-top: 20px;
-    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -607,7 +596,7 @@ input::-webkit-input-placeholder {
 
     .nav-header {
         width: 100%;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .menu {
@@ -622,9 +611,14 @@ input::-webkit-input-placeholder {
         padding: 0;
     }
 
+    .filtres-container i {
+        font-size: 1.5em;
+    }
+
     .hebergements-activites {
         text-align: center;
         border-bottom: 2px solid var(--main-bg-color);
+        padding-bottom: 10px;
         width: 100%;
     }
 
@@ -738,6 +732,10 @@ input::-webkit-input-placeholder {
         width: 100%;
     }
 
+    .section-title-populaires {
+        padding-left: 20px;
+    }
+
     .populaires-title i {
         margin-right: 25px;
     }
@@ -763,6 +761,10 @@ input::-webkit-input-placeholder {
         width: 100%;
         padding: 0;
         margin-top: 30px;
+    }
+
+    .section-title-hebergements {
+        padding-left: 10px;
     }
 
     .hebergements-cards {
@@ -818,7 +820,7 @@ input::-webkit-input-placeholder {
     }
 
     .affichez-plus {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     /****** Activités Marseille ***********/
